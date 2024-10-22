@@ -20,14 +20,14 @@ function runAnimations() {
 // trigger to play music in the background with sweetalert
 window.addEventListener('load', () => {
     Swal.fire({
-        title: 'Apakah kamu siap?',
+        title: 'ShIaapp gaa nich?',
         // text: "You won't be able to revert this!",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Iya',
-        cancelButtonText: 'Tidak',
+        confirmButtonText: 'AshiAappp',
+        cancelButtonText: 'Enggaa shIap',
     }).then((result) => {
         if (result.isConfirmed) {
             document.querySelector('.song').play();
@@ -36,9 +36,9 @@ window.addEventListener('load', () => {
         } else {
             swal.fire({
                 icon: 'error',
-                title: 'Pilih "Iya" yaa..',
+                title: 'Pilih "AshiAappp" yaa..',
                 confirmButtonColor: '#3085d6',
-                confirmButtonText: 'Ok',
+                confirmButtonText: 'ShAapp',
             }).then((result) => {
                 if (result.isConfirmed) {
                     location.reload();
@@ -127,6 +127,7 @@ const animationTimeline = () => {
         opacity: 0,
         y: -150
     }, "+=1")
+    
     .from(".idea-1", 0.7, ideaTextTrans)
     .to(".idea-1", 0.7, ideaTextTransLeave, "+=2.5")
     .from(".idea-2", 0.7, ideaTextTrans)
@@ -265,13 +266,13 @@ const animationTimeline = () => {
 
     function wa(isi) 
     {
-        open("https://wa.me/6282229814095?text=Terima kasih ya udah inget hari ulang tahun aku, di hari spesial ini aku mau " + isi)
+        open("https://wa.me/6281335626624?text=Balas kata-kata ku yachh.... " + isi)
     }
 
     // Wishes
     async function makeawish() {
         var { value: kado } = await swal.fire({
-            title: 'Di hari spesial ini, kamu mau apa?',
+            title: 'Pak Somad membeli ikan, Adakah pesan yang ingin disampaikan?',
             confirmButtonColor: '#2fe96b',
             confirmButtonText: 'Kirim ✈',
             input: 'text',
@@ -280,7 +281,7 @@ const animationTimeline = () => {
     
         if (kado) {
             await swal.fire({
-                title: 'Kirim jawabannya ke WA aku ya?',
+                title: 'Kirim jawaban',
                 confirmButtonColor: '#2fe965',
                 confirmButtonText: 'Kirim ✈'
             });
@@ -288,7 +289,7 @@ const animationTimeline = () => {
         } else {
             await swal.fire({
                 icon: 'error',
-                title: 'Jangan dikosongin dong!!!'
+                title: 'Gaboleee Kosongg yaa Sayaaanggg!!!'
             });
             makeawish();
         }
